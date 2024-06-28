@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elelctromart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="shop.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="cart.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">All Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="product.html">Product</a></li>
+                <!-- <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>-->
+                 <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel-container">
+        <div class="carousel-slide">
+            <img src="a1.png" alt="Image 1">
+            <img src="a2.png" alt="Image 2">
+            <img src="a3.png" alt="Image 3">
+            <img src="a4.jpeg" alt="Image 3">
+            <img src="a5.jpeg" alt="Image 3">
+            <img src="a6.jpeg" alt="Image 3">
+
+           <!-- <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>-->
+        </div>
+    </section>
+
+    <section class="hero">
+        <h1>Welcome to the world of technology</h1>
+        <h3>Your Ultimate Tech Destination: Unleashing Innovation, Empowering Your Lifestyle</h3>
+    </section>
+
+
+    <section class="recommended-products">
+        <h2>Recommended Products</h2>
+        <div class="product-grid" id="recommended-product-grid"></div>
+    </section>
+
+    
+
+    <main>
+        <section class="form-section">
+            <form action="#">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 Modern Website. All Rights Reserved.</p>
+    </footer>
+    <script src="shop.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Global styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section styles */
+.featured-products, .filters-sorting, .product-list, .pagination {
+    padding: 1em;
+    margin: 1em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Product grid styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.product {
+    border: 3px solid #007ACC; /* Thicker border */
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Gradient background */
+}
+
+.product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s; /* Smooth image transition */
+}
+
+.product img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.product h3 {
+    font-size: 1.4em; /* Slightly larger font size */
+    margin: 0.5em 0;
+    color: #005f99; /* Darker color */
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #007ACC;
+}
+
+.product button {
+    padding: 0.8em 1.2em; /* Larger padding */
+    margin-top: 0.5em;
+    border: 2px solid #005f99; /* Thicker border */
+    background-color: #007ACC;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product button:hover {
+    background-color: #005f99;
+    border-color: #003f66; /* Darker border on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Filter and sorting styles */
+.filters, .sorting {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filters select, .sorting select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+    background-color: #007ACC;
+    color: white;
+}
+
+.pagination a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #007ACC;
+    color: white;
+}

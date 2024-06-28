@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="product.css">
+    <script defer src="cart.js"></script>
+    <script defer src="shop.js"></script>
+    <script defer src="accessories.js"></script>
+    <script defer src="products.js"></script>
+    <script defer src="script.js"></script>
+    
+
+
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </header>
+    <main>
+        <section class="cart-list">
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total"></span></p>
+                <button id="checkout">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('checkout').addEventListener('click', () => {
+            window.location.href = 'checkout.html';
+        });
+    </script>
+</body>
+</html>
