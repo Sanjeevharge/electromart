@@ -1,4 +1,27 @@
-import React from 'react';
+import AccessoryCategoryCard from "../components/cards/AccessoryCategoryCard";
+
+const accessoryCategories = [
+  {
+    title: "Phone Accessories",
+    link: "/products?category=accessories&tag=case",
+  },
+  {
+    title: "Laptop Accessories",
+    link: "/products?category=accessories&tag=mouse",
+  },
+  {
+    title: "Chargers",
+    link: "/products?category=accessories&tag=charger",
+  },
+  {
+    title: "TV Accessories",
+    link: "/products?category=accessories&tag=tv",
+  },
+  {
+    title: "Watch Accessories",
+    link: "/products?category=accessories&tag=watch",
+  },
+];
 
 const AccessoriesPage = () => {
   return (
@@ -7,27 +30,14 @@ const AccessoriesPage = () => {
       <p className="text-lg text-gray-600 mb-8">
         Find the perfect accessories for your devices.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="border border-gray-200 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">Home Appliances</h2>
-          {/* Placeholder for home appliance accessories */}
-        </div>
-        <div className="border border-gray-200 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">Phones</h2>
-          {/* Placeholder for phone accessories */}
-        </div>
-        <div className="border border-gray-200 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">Laptops</h2>
-          {/* Placeholder for laptop accessories */}
-        </div>
-        <div className="border border-gray-200 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">TVs</h2>
-          {/* Placeholder for TV accessories */}
-        </div>
-        <div className="border border-gray-200 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">Watches</h2>
-          {/* Placeholder for watch accessories */}
-        </div>
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {accessoryCategories.map((category) => (
+          <AccessoryCategoryCard
+            key={category.title}
+            title={category.title}
+            link={category.link}
+          />
+        ))}
       </div>
     </div>
   );
